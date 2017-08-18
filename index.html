@@ -1,0 +1,25 @@
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("p").click(function(){
+        $(this).hide();
+    });
+});
+</script>
+<h1>Local Weather Forecast</h1>
+<div id="weather">
+  <div id="iconSide">
+    <img id="iconImg" src="http://icon-park.com/imagefiles/simple_weather_icons2_cloudy.png" alt="Weather Icon.Image" />
+    <button id="switchFC">Use Celsius</button>
+  </div>
+  <div id="dataSide">
+    <div id="location"></div>
+    <div id="summary"></div>
+    <div class="temp">Current temp. is:</div>
+    <div id="currTemp"></div>
+    <div class="temp">Expected low is:</div>
+    <div id="lowTemp"></div>
+    <div class="temp">Expected high is:</div>
+    <div id="highTemp"></div>
+  </div>
+</div>
